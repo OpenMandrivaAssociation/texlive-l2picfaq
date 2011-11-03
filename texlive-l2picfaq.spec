@@ -1,3 +1,9 @@
+# revision 19601
+# category Package
+# catalog-ctan /info/l2picfaq/german
+# catalog-date 2010-08-29 15:51:21 +0200
+# catalog-license fdl
+# catalog-version 1.50
 Name:		texlive-l2picfaq
 Version:	1.50
 Release:	1
@@ -25,6 +31,7 @@ a solution, in the form of some sample code, for every problem.
 %doc %{_texmfdistdir}/doc/latex/l2picfaq/gfdl.tex
 %doc %{_texmfdistdir}/doc/latex/l2picfaq/l2picfaq.pdf
 %doc %{_texmfdistdir}/doc/latex/l2picfaq/l2picfaq.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -35,3 +42,5 @@ a solution, in the form of some sample code, for every problem.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
