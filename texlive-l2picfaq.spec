@@ -6,7 +6,7 @@
 # catalog-version 1.50
 Name:		texlive-l2picfaq
 Version:	1.50
-Release:	10
+Release:	11
 Summary:	LaTeX pictures "how-to" (German)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/l2picfaq/german
