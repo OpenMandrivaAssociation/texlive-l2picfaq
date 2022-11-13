@@ -1,18 +1,12 @@
-# revision 19601
-# category Package
-# catalog-ctan /info/l2picfaq/german
-# catalog-date 2010-08-29 15:51:21 +0200
-# catalog-license fdl
-# catalog-version 1.50
 Name:		texlive-l2picfaq
-Version:	1.50
-Release:	11
+Version:	19601
+Release:	1
 Summary:	LaTeX pictures "how-to" (German)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/l2picfaq/german
 License:	FDL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l2picfaq.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l2picfaq.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l2picfaq.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l2picfaq.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -32,24 +26,10 @@ a solution, in the form of some sample code, for every problem.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.50-2
-+ Revision: 753060
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.50-1
-+ Revision: 718789
-- texlive-l2picfaq
-- texlive-l2picfaq
-- texlive-l2picfaq
-- texlive-l2picfaq
-
