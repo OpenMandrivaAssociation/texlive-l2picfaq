@@ -1,6 +1,6 @@
 Name:		texlive-l2picfaq
 Version:	19601
-Release:	1
+Release:	2
 Summary:	LaTeX pictures "how-to" (German)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/l2picfaq/german
