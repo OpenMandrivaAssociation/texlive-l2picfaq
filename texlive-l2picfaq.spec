@@ -3,7 +3,7 @@ Version:	19601
 Release:	2
 Summary:	LaTeX pictures "how-to" (German)
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/l2picfaq/german
+URL:		https://www.ctan.org/tex-archive/info/l2picfaq/german
 License:	FDL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l2picfaq.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l2picfaq.doc.r%{version}.tar.xz
